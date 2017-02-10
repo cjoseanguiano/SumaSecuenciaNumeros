@@ -15,15 +15,21 @@ public class SumaSecuenciaNumeros {
 
         int sec_num;
         int suma = 0;
+        int nCuenta;
 
-        do {
+        nCuenta = Integer.parseInt(JOptionPane.showInputDialog("Cuantos numeros"));
+
+        for (int i = 0; i < nCuenta; i++) {
             sec_num = Integer.parseInt(JOptionPane.showInputDialog("Numero"));
 
             if (sec_num % 2 == 0) {
                 suma = suma + sec_num;
                 System.out.println("Valor de la suma " + suma);
+
             }
-        } while (sec_num > 0);
+
+        }
+
     }
 
 }
